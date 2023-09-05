@@ -1,0 +1,38 @@
+<article style="background-color: white; max-width: 660px; font-family: sans-serif; color: black; margin: auto; padding: 0 1em; line-height: 160%; margin-bottom: 100px;"><h1 id="javascript" style="text-align: center; font-size: 2.2em; line-height: 170%; padding: 1em auto; margin-bottom: 0.4em; margin-top: 0;">JavaScript</h1>
+<h2 id="moodle-h2" style="font-size: 1.7em; line-height: 150%; margin-top: 1.3em; margin-bottom: 1em; border-left: solid 15px #a25678; padding-top: .3em; padding-bottom: .3em; padding-left: 15px; background-color: #eee;">Moodle H2</h2>
+<p style="padding: .5em 8px; margin: 0 2px;">H2 header inside a Moodle page is usually redundant. Remove that with the
+following code chunk.</p>
+<h2 id="anki" style="font-size: 1.7em; line-height: 150%; margin-top: 1.3em; margin-bottom: 1em; border-left: solid 15px #a25678; padding-top: .3em; padding-bottom: .3em; padding-left: 15px; background-color: #eee;">anki</h2>
+<p style="padding: .5em 8px; margin: 0 2px;">Hide and show small texts. Click to toggle.</p>
+<ul style="margin-top: 15px; margin-bottom: 15px; margin-left: 25px; padding-left: 20px;">
+<li style="line-height: 150%; padding: 0; margin: 0; margin-bottom: 5px; margin-top: 0;">The highest mountain in Japan is <span class="anki-marker" style="background-color: yellow; padding: 3px; margin-left: 3px; margin-right: 3px; border: 1px solid slateblue; cursor: pointer; margin-top: 0;"><span class="anki-text" style="color: blue; opacity: 0; margin-top: 0;">Mt. Fuji</span></span>.</li>
+<li style="line-height: 150%; padding: 0; margin: 0; margin-bottom: 5px;">The capital of Japan is <span class="anki-marker" style="background-color: yellow; padding: 3px; margin-left: 3px; margin-right: 3px; border: 1px solid slateblue; cursor: pointer; margin-top: 0;"><span class="anki-text" style="color: blue; opacity: 0; margin-top: 0;">Tokyo</span></span>.</li>
+</ul>
+<h3 id="modal-window" style="font-size: 1.4em; padding-bottom: .2em; padding-left: 8px; margin-top: 1.5em; border-bottom: solid 2px #a25678;">modal window</h3>
+<p style="padding: .5em 8px; margin: 0 2px;">Students may want to check the definition of difficult terms. Use modal windows
+let them do so very easily.</p>
+<p style="padding: .5em 8px; margin: 0 2px;">Set up the jquery modal…</p>
+<p style="padding: .5em 8px; margin: 0 2px;">prepare the dictionary…</p>
+<p style="padding: .5em 8px; margin: 0 2px;">Click to open the definitions:</p>
+<ul style="margin-top: 15px; margin-bottom: 15px; margin-left: 25px; padding-left: 20px;">
+<li style="line-height: 150%; padding: 0; margin: 0; margin-bottom: 5px; margin-top: 0;"><a href="#modal-1" rel="modal:open" class="modal-open" style="color: black; text-decoration: none; border-bottom: 1px black dashed; cursor: pointer; margin-top: 0;">Macroeconomics</a></li>
+<li style="line-height: 150%; padding: 0; margin: 0; margin-bottom: 5px;"><a href="#modal-2" rel="modal:open" class="modal-open" style="color: black; text-decoration: none; border-bottom: 1px black dashed; cursor: pointer; margin-top: 0;">Microeconomics</a></li>
+<li style="line-height: 150%; padding: 0; margin: 0; margin-bottom: 5px;"><a href="#modal-3" rel="modal:open" class="modal-open" style="color: black; text-decoration: none; border-bottom: 1px black dashed; cursor: pointer; margin-top: 0;">Public Finance</a></li>
+</ul>
+<p style="padding: .5em 8px; margin: 0 2px;">Expand the usually hidden blocks with the following code. This code must be
+run at the end of the document.</p>
+<div id="modal-1" class="modal">
+<h2 id="macroeconomics" style="line-height: 150%; border-left: solid 15px #a25678; padding-top: .3em; font-size: 100%; border: none; border-bottom: 1px dashed gray; background-color: white; text-align: left; padding-bottom: 0; padding-left: 10px; margin-bottom: 5px; margin-top: 0;">Macroeconomics</h2>
+<p style="padding: .5em 8px; margin: 0 2px;">the branch of economics concerned with large-scale or general economic factors, such as interest rates and national productivity. (Definitions from Oxford Languages)</p>
+<div id="modal-2" class="modal">
+<h2 id="microeconomics" style="line-height: 150%; border-left: solid 15px #a25678; padding-top: .3em; font-size: 100%; border: none; border-bottom: 1px dashed gray; background-color: white; text-align: left; padding-bottom: 0; padding-left: 10px; margin-bottom: 5px; margin-top: 0;">Microeconomics</h2>
+<p style="padding: .5em 8px; margin: 0 2px;">the part of economics concerned with single factors and the effects of individual decisions. (Definitions from Oxford Languages)</p>
+<div id="modal-3" class="modal">
+<h2 id="public-finance" style="line-height: 150%; border-left: solid 15px #a25678; padding-top: .3em; font-size: 100%; border: none; border-bottom: 1px dashed gray; background-color: white; text-align: left; padding-bottom: 0; padding-left: 10px; margin-bottom: 5px; margin-top: 0;">Public Finance</h2>
+<p style="padding: .5em 8px; margin: 0 2px;">Public finance is the study of the role of the government in the economy.[1] It is the branch of economics that assesses the government revenue and government expenditure of the public authorities and the adjustment of one or the other to achieve desirable effects and avoid undesirable ones. (Wikipedia)</p>
+</div>
+<script>
+    document.querySelector('#maincontent+h2').style.display = 'none';
+  </script><script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" defer></script><script src="https://kenjisato.github.io/resources/juicedown/js/anki.js" defer></script><script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js" defer></script><script src="https://kenjisato.github.io/resources/juicedown/js/modal.js" defer></script>
+</div>
+</div></article>

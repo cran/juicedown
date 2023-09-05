@@ -1,0 +1,26 @@
+# `include*()`
+
+### includeGraphics()
+
+````markdown
+`r ''````{r}
+includeGraphics("pic/pic1.png")
+```
+````
+
+```{r}
+includeGraphics("pic/pic1.png")
+```
+
+
+### includeYT (YouTube Video)
+
+````markdown
+`r ''````{r}
+includeYT("https://youtu.be/gsT6eKsnT0M")
+```
+````
+
+```{r}
+includeYT("https://youtu.be/gsT6eKsnT0M")
+```

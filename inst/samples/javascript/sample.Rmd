@@ -1,0 +1,55 @@
+# JavaScript
+
+## Moodle H2
+
+H2 header inside a Moodle page is usually redundant. Remove that with the 
+following code chunk.
+
+```{r}
+tweak_moodle_heading()
+```
+
+## anki
+
+Hide and show small texts. Click to toggle.
+
+- The highest mountain in Japan is `r anki("Mt. Fuji")`.
+- The capital of Japan is `r anki("Tokyo")`.
+
+
+```{r}
+anki_setup()
+```
+
+
+### modal window
+
+Students may want to check the definition of difficult terms. Use modal windows 
+let them do so very easily.
+
+Set up the jquery modal...
+
+```{r}
+modal_setup()
+```
+
+prepare the dictionary...
+
+```{r, error = FALSE}
+dict <- readxl::read_excel(juicedown_example("javascript", "economics.xlsx"))
+def <- modal_register(dict)
+```
+
+Click to open the definitions: 
+
+- `r def("Macroeconomics")` 
+- `r def("Microeconomics")` 
+- `r def("Public Finance")` 
+
+Expand the usually hidden blocks with the following code. This code must be 
+run at the end of the document. 
+
+```{r}
+modal_body(terms)
+```
+

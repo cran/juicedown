@@ -1,0 +1,28 @@
+---
+knit: juicedown:::preview
+juicedown:
+  tag: article
+  id: juicedown-content
+  clip: true
+  full_html: true
+  stylesheet:
+    - "article.scss"
+---
+
+# H1
+
+## H2
+
+* a[^1]
+* b
+* c
+
+### H3
+
+
+```{r}
+tweak_footnote_highlight()
+tweak_moodle_heading()
+```
+
+[^1]: Hello.
